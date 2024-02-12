@@ -11,6 +11,10 @@
 		D725658D2B7A17CE0004C38E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D725658C2B7A17CE0004C38E /* ContentView.swift */; };
 		D725658F2B7A17CF0004C38E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D725658E2B7A17CF0004C38E /* Assets.xcassets */; };
 		D72565922B7A17CF0004C38E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D72565912B7A17CF0004C38E /* Preview Assets.xcassets */; };
+		D725659A2B7A18010004C38E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = D72565992B7A18010004C38E /* ComposableArchitecture */; };
+		D725659C2B7A18100004C38E /* TestFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D725659B2B7A18100004C38E /* TestFeature.swift */; };
+		D725659E2B7A1CAC0004C38E /* ChildFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D725659D2B7A1CAC0004C38E /* ChildFeature.swift */; };
+		D72565A02B7A1ECC0004C38E /* ChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D725659F2B7A1ECC0004C38E /* ChildView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		D725658C2B7A17CE0004C38E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D725658E2B7A17CF0004C38E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D72565912B7A17CF0004C38E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D725659B2B7A18100004C38E /* TestFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFeature.swift; sourceTree = "<group>"; };
+		D725659D2B7A1CAC0004C38E /* ChildFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildFeature.swift; sourceTree = "<group>"; };
+		D725659F2B7A1ECC0004C38E /* ChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D725659A2B7A18010004C38E /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +63,9 @@
 				D725658C2B7A17CE0004C38E /* ContentView.swift */,
 				D725658E2B7A17CF0004C38E /* Assets.xcassets */,
 				D72565902B7A17CF0004C38E /* Preview Content */,
+				D725659B2B7A18100004C38E /* TestFeature.swift */,
+				D725659D2B7A1CAC0004C38E /* ChildFeature.swift */,
+				D725659F2B7A1ECC0004C38E /* ChildView.swift */,
 			);
 			path = NavigationMRE;
 			sourceTree = "<group>";
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = NavigationMRE;
+			packageProductDependencies = (
+				D72565992B7A18010004C38E /* ComposableArchitecture */,
+			);
 			productName = NavigationMRE;
 			productReference = D72565872B7A17CE0004C38E /* NavigationMRE.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = D725657E2B7A17CE0004C38E;
+			packageReferences = (
+				D72565982B7A18010004C38E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = D72565882B7A17CE0004C38E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D725659C2B7A18100004C38E /* TestFeature.swift in Sources */,
+				D725659E2B7A1CAC0004C38E /* ChildFeature.swift in Sources */,
 				D725658D2B7A17CE0004C38E /* ContentView.swift in Sources */,
 				D725658B2B7A17CE0004C38E /* NavigationMREApp.swift in Sources */,
+				D72565A02B7A1ECC0004C38E /* ChildView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +217,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -344,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D72565982B7A18010004C38E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D72565992B7A18010004C38E /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D72565982B7A18010004C38E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D725657F2B7A17CE0004C38E /* Project object */;
 }
