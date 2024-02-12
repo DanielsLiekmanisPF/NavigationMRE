@@ -45,6 +45,34 @@ struct RootView: View {
                 destination: ChildView.init(store:),
                 label: EmptyView.init
             )
+
+            // This is an example of NavigationLink
+            // that produces no perception warnings
+//            NavigationLink(
+//                isActive: Binding<Bool>(
+//                    get: {
+//                        if case .childFeature = store.destination {
+//                            return true
+//                        }
+//                        return false
+//                    },
+//                    set: {
+//                        if !$0 {
+//                            store.send(.destination(.dismiss))
+//                        }
+//                    }
+//                ),
+//                destination: {
+//                    // A hack to understand if this resolves perception warnings
+//                    if let store = $store.scope(
+//                        state: \.destination?.childFeature,
+//                        action: \.destination.childFeature
+//                    ).wrappedValue {
+//                        ChildView(store: store)
+//                    }
+//                },
+//                label: EmptyView.init
+//            )
         }
     }
 }
