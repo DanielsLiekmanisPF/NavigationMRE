@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RootView.swift
 //  NavigationMRE
 //
 //  Created by Daniels Liekmanis on 12/02/2024.
@@ -8,8 +8,8 @@
 import ComposableArchitecture
 import SwiftUI
 
-struct ContentView: View {
-    @Perception.Bindable var store: StoreOf<TestFeature>
+struct RootView: View {
+    @Perception.Bindable var store: StoreOf<RootFeature>
 
     var body: some View {
         NavigationView {
@@ -50,11 +50,11 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(
+    RootView(
         store: Store(
-            initialState: TestFeature.State()
+            initialState: RootFeature.State()
         ) {
-            TestFeature()
+            RootFeature()
         }
     )
 }

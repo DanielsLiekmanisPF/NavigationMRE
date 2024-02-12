@@ -12,11 +12,11 @@ import SwiftUI
 struct NavigationMREApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(
+            RootView(
                 store: Store(
-                    initialState: TestFeature.State()
+                    initialState: RootFeature.State()
                 ) {
-                    TestFeature()
+                    RootFeature()
                 }
             )
         }

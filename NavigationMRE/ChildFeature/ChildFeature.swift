@@ -15,8 +15,6 @@ struct ChildFeature {
     enum Action: Equatable {}
 
     var body: some ReducerOf<Self> {
-        Reduce { _, action in
-            switch action {}
-        }
+        EmptyReducer()
     }
 }

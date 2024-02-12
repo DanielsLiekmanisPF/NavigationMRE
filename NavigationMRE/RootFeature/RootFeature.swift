@@ -1,5 +1,5 @@
 //
-//  TestFeature.swift
+//  RootFeature.swift
 //  NavigationMRE
 //
 //  Created by Daniels Liekmanis on 12/02/2024.
@@ -8,7 +8,7 @@
 import ComposableArchitecture
 
 @Reducer
-struct TestFeature {
+struct RootFeature {
     @ObservableState
     struct State: Equatable {
         @Presents var destination: Destination.State?
